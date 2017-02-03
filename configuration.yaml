@@ -168,15 +168,6 @@ weblink:
 
 # Enables the Notify Components
 notify:
-  - name: gmail_smtp
-    platform: smtp
-    server: smtp.gmail.com
-    port: 587
-    sender: !secret gmail_sender
-    starttls: true
-    username: !secret gmail_username
-    password: !secret gmail_password
-    recipient: !secret gmail_recipient
   - name: ios
     platform: ios
 

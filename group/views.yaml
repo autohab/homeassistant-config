@@ -41,3 +41,4 @@ info:
     - group.all_switches
     - group.all_remotes
     - group.testing
+    - group.nodemcu_sensors

@@ -30,3 +30,7 @@ tado heating:
     - sensor.olivias_room_tado_mode
     - sensor.olivias_room_temperature
 
+nodemcu_sensors:
+  name: Temperature Sensors
+  entities:
+    - sensor.nodemcu_temperature
