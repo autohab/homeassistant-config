@@ -1,0 +1,14 @@
+#####################################################
+#                                                   #
+#  Root device disk usage greater than 90%          #
+#                                                   #
+#####################################################
+- alias: System Disk Space gt 90% Notification
+  trigger:
+    platform: numeric_state
+    entity_id: sensor.disk_use_
+    above: 89
+  action:
+    service: notify.ios_daves_iphone
+    data:
+      message: 'Raspberry Pi Server disk usage is at {{ states.sensor.disk_use_.state }}%'

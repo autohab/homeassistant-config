@@ -1,0 +1,45 @@
+################################
+#
+#  default group visibility
+#
+################################
+group.all_automations:
+  hidden: false
+group.all_devices:
+  hidden: true
+group.all_switches:
+  hidden: false
+group.all_remotes:
+  hidden: false
+
+################################
+#
+#  Home View Card Ordering
+#
+################################
+persistent_notification.update_available:
+  order: 1
+group.family:
+  order: 2
+group.home_modes:
+  order: 3
+group.commutes:
+  order: 4
+group.lounge:
+  order: 5
+media_player.kodi:
+  order: 6
+group.dining_room:
+  order: 7
+group.front_door:
+  order: 8
+group.landing:
+  order: 9
+group.office:
+  order: 10
+group.weather:
+  order: 11
+group.portable_devices:
+  order: 12
+group.devices:
+  order: 13

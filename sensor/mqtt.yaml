@@ -1,0 +1,5 @@
+- platform: mqtt
+  state_topic: 'nodemcu/tempsensor'
+  name: 'NodeMCU Temperature'
+  unit_of_measurement: '°C'
+  value_template: '{{ value_json.temperature }}'

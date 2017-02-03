@@ -1,0 +1,4 @@
+Testing:
+  control: hidden
+  entities:
+    - input_boolean.test_input

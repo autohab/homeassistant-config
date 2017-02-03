@@ -1,0 +1,43 @@
+default_view:
+  view: yes
+  icon: mdi:home
+  entities:
+    - persistent_notification.update_available
+    - group.family
+    - group.tado_heating
+    - group.home_modes
+    - group.commutes
+    - group.weather
+    - group.lounge
+    - group.dining_room
+    - group.office
+    - group.olivias_room
+    - group.front_door
+    - group.landing
+    - group.portable_devices
+    - media_player.kodi
+    - group.tide_times
+
+lights:
+  view: yes
+  icon: mdi:lightbulb
+  entities:
+    - group.lounge_lights
+    - group.dining_room_lights
+    - group.master_bedroom_lights
+    - group.office_lights
+    - group.front_door_lights
+    - group.landing_lights
+
+info:
+  view: yes
+  icon: mdi:settings
+  entities:
+    - group.system
+    - group.transmission
+    - group.pihole
+    - group.device_links
+    - group.all_automations
+    - group.all_switches
+    - group.all_remotes
+    - group.testing

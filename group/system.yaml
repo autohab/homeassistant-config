@@ -1,0 +1,7 @@
+system:
+  entities:
+    - sensor.cpu_use
+    - sensor.ram_use
+    - sensor.last_boot
+    - sensor.since_last_boot
+    - sensor.disk_use_

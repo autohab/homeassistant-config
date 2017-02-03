@@ -1,0 +1,12 @@
+transmission:
+  control: hidden
+  entities:
+    - weblink.transmission
+    - sensor.transmission_status
+    - sensor.transmission_down_speed
+    - script.pause_transmission_downloads
+    - script.resume_transmission_downloads
+#    - script.restart_transmission_service
+pihole:
+  entities:
+    - sensor.pihole_2
