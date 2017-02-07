@@ -1,4 +1,4 @@
-commutes:
+Commutes:
   entities:
     - sensor.home_to_daves_work
     - sensor.daves_work_to_home

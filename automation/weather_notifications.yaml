@@ -17,9 +17,9 @@
       to: 'home'
   condition:
     - condition: numeric_state
-      entity_id: sensor.dark_sky_apparent_temperature 
+      entity_id: sensor.dark_sky_temperature 
       below: '3'
   action:
     - service: notify.ios_daves_iphone
       data:
-        message: 'The outside temperature is currently {{ states.sensor.dark_sky_apparent_temperature.state }} degrees, you might want to put on the windscreen cover.'
+        message: 'The outside temperature is currently {{ states.sensor.dark_sky_temperature.state }} degrees, you might want to put on the windscreen cover.'

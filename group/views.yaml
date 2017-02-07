@@ -35,7 +35,6 @@ info:
   entities:
     - group.system
     - group.transmission
-    - group.pihole
     - group.device_links
     - group.all_automations
     - group.all_switches
