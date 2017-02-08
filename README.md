@@ -23,6 +23,8 @@ These packages are installed on the Raspberry Pi hosting Home Assistant
 
  - HomeBridge - exposing Home Assistant and Logitech Harmony Hub to iOS HomeKit
  - Mosquitto - MQTT broker connected into Home Assistant
+ - Transmission
+ - OpenVPN
 
 **Automations:**
 

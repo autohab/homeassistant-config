@@ -165,11 +165,6 @@ weblink:
     - name: PiHole
       url: http://192.168.1.254/admin
 
-# Enables the Notify Components
-notify:
-  - name: ios
-    platform: ios
-
 # Enables the Shell Commands Components
 shell_command:
   pause_transmission_downloads: transmission-remote -tall -S
