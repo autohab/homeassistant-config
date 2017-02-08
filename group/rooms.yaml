@@ -3,10 +3,8 @@ lounge:
   control: hidden
   entities:
     - climate.heating
-    - sensor.heating_temperature
     - sensor.heating_humidity
     - sensor.heating_heating
-    - sensor.heating_tado_mode
     - group.lounge_lights
     - remote.lounge
     - sensor.harmony_hub
@@ -21,7 +19,7 @@ dining room:
     - sensor.pihole
     - sensor.amazon_echo_dot
     - sensor.hue_hub
-    - sensor.home_tado_bridge_status
+    - sensor.tado_bridge
     - weblink.router
     - weblink.pihole
 
@@ -55,4 +53,3 @@ olivias room:
     - sensor.olivias_room_temperature
     - sensor.olivias_room_humidity
     - sensor.olivias_room_heating
-    - sensor.olivias_room_tado_mode

@@ -38,3 +38,6 @@
 
     netgear_r7000_router:
       value_template: "{{ 'Online' if is_state('device_tracker.netgear201d', 'home') else 'Offline' }}"
+
+    tado_bridge:
+      value_template: "{{ 'Online' if is_state('sensor.home_tado_bridge_status', 'True') else 'Offline' }}"

@@ -30,3 +30,19 @@ sensor.low_tide_time:
 
 sensor.low_tide_height:
   icon: mdi:elevation-decline
+
+sensor.heating_tado_mode:
+  icon: mdi:home
+
+sensor.olivias_room_tado_mode:
+  icon: mdi:home
+
+sensor.heating_heating:
+  friendly_name: 'Lounge Heating'
+  icon: mdi:radiator
+
+sensor.olivias_room_heating:
+  icon: mdi:radiator
+
+sensor.heating_humidity:
+  friendly_name: 'Lounge Humidity'
