@@ -72,11 +72,12 @@
   action:
     - service: scene.turn_on
       entity_id: scene.daytime
-    - service: input_boolean.turn_on
-      entity_id: input_boolean.arrived_home    
     - service: notify.ios_daves_iphone
       data:
         message: 'Welcome home, I have switched on the lights for you.'
+    - delay: 00:10:00 
+    - service: light.turn_off
+      entity_id: light.front_door_light
 
 #####################################################
 #
@@ -134,24 +135,3 @@
     - service: notify.ios_daves_iphone
       data:
         message: 'There is no one at home so I have switched off the lights for you.'
-
-#####################################################
-#
-#  Switch off front door light 10 minutes after arriving home
-#
-#####################################################
-- alias: Light front door off 10 mins after arriving home
-  initial_state: true
-  hide_entity: false
-  trigger:
-    platform: state
-    entity_id: input_boolean.arrived_home
-    from: 'off'
-    to: 'on'
-    for:
-      minutes: '10'
-  action:
-    - service: light.turn_off
-      entity_id: light.front_door_light
-    - service: input_boolean.turn_off
-      entity_id: input_boolean.arrived_home
