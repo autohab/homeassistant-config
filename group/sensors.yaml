@@ -33,4 +33,4 @@ tado heating:
 nodemcu_sensors:
   name: Temperature Sensors
   entities:
-    - sensor.nodemcu_temperature
+    - sensor.mqtt_nodemcu_tempsensor_01

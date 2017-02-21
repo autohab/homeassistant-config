@@ -7,8 +7,8 @@ lounge:
     - sensor.heating_heating
     - group.lounge_lights
     - remote.lounge
-    - sensor.harmony_hub
     - sensor.lounge_kodi
+    - sensor.harmony_hub
     - sensor.steam_link
 
 dining room:

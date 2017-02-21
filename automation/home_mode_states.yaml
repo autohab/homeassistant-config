@@ -14,3 +14,20 @@
   action:
     - service: input_boolean.turn_on
       entity_id: input_boolean.work_from_home_mode
+
+#####################################################
+#
+#  Disable Work From Home Mode via iOS Notification response
+#
+#####################################################
+- alias: Disable Work from home from iOS Notification Response
+  initial_state: True
+  hide_entity: false
+  trigger:
+    platform: event
+    event_type: ios.notification_action_fired
+    event_data:
+      actionName: WFH_MODE_DISABLED
+  action:
+    - service: input_boolean.turn_off
+      entity_id: input_boolean.work_from_home_mode

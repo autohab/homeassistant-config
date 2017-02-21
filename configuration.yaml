@@ -24,7 +24,13 @@ ios:
         identifier: 'WFH'
         actions:
           - identifier: 'WFH_MODE_ENABLED'
-            title: 'Enable WFH Mode'
+            title: 'Yes'
+            activationMode: 'background'
+            authenticationRequired: yes
+            destructive: no
+            behavior: 'default'
+          - identifier: 'WFH_MODE_DISABLED'
+            title: 'No'
             activationMode: 'background'
             authenticationRequired: yes
             destructive: no

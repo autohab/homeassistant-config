@@ -46,3 +46,6 @@ sensor.olivias_room_heating:
 
 sensor.heating_humidity:
   friendly_name: 'Lounge Humidity'
+
+sensor.mqtt_nodemcu_tempsensor_01:
+  friendly_name: 'Temperature'

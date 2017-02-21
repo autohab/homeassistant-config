@@ -15,8 +15,9 @@ default_view:
     - group.front_door
     - group.landing
     - group.portable_devices
-    - media_player.kodi
     - group.tide_times
+    - group.nodemcu_sensors
+    - group.media_players
 
 lights:
   view: yes
@@ -40,4 +41,3 @@ info:
     - group.all_switches
     - group.all_remotes
     - group.testing
-    - group.nodemcu_sensors

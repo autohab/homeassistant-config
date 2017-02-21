@@ -4,9 +4,9 @@ devices:
     - sensor.netgear_r7000_router
     - sensor.zyxel_nsa310
     - sensor.pihole
-    - sensor.lounge_kodi
     - sensor.harmony_hub
     - sensor.hue_hub
+    - sensor.lounge_kodi
     - sensor.gaming_pc
     - sensor.steam_link
     - sensor.amazon_echo_dot
@@ -26,3 +26,8 @@ device links:
     - weblink.router
     - weblink.nsa310
     - weblink.pihole
+
+media players:
+  name: Media Players
+  entities:
+    - media_player.kodi
