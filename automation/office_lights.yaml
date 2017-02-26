@@ -58,3 +58,23 @@
     - service: notify.ios_daves_iphone
       data:
         message: 'Working from home, office lights switched on'
+
+#####################################################
+#
+#  Switch off Lights in the Office when finished working from home
+#
+#####################################################
+- alias: Office lights off when finished Working from Home
+  initial_state: true
+  hide_entity: false
+  trigger:
+    - platform: state
+      entity_id: input_boolean.work_from_home_mode
+      from: 'on'
+      to: 'off'
+  action:
+    - service: light.turn_off
+      entity_id: light.desk_lightstrip
+    - service: notify.ios_daves_iphone
+      data:
+        message: 'Working from home finised, office lights switched off'

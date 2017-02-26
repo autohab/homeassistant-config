@@ -47,6 +47,9 @@ http:
   ip_ban_enabled: True
   login_attempts_threshold: 5
 
+#Enabls the Configuration Panel
+config:
+
 # Checks for available updates
 updater:
   reporting: no
